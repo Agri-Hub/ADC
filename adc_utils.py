@@ -23,6 +23,7 @@ dc = datacube.Datacube(app="analytics",config="/home/eouser/datacube.conf")
 import time,fiona
 from tqdm import tqdm
 from shapely.geometry import shape
+import xarray as xr
 
 def date_range(start, end, intv):
     start = datetime.strptime(start,"%Y-%m-%d")
