@@ -145,7 +145,7 @@ def calculate_index(data, index):
             return (B08 / B03) - 1
         else:
             return None
-    except Exception e:
+    except Exception as e:
         return None
 
 def cloud_data(data, index):
